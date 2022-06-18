@@ -70,7 +70,6 @@ int Carros () {
                 printf("\n\n(1) Fiat [Pulse]\tR$80,00\n(2) Renault [Kwid]\tR$85,00\n(3) A. Romeo [Stelvio]\tR$100,00\n-> ");
                 scanf("%d", &opcao);
                 system("cls");
-                    
                 switch(opcao){
                     case 1:
                         aluguel = 80;
@@ -97,48 +96,46 @@ int Motos () {
     printf("\n(1) 2022\n(2) 2021\n-> ");
     scanf("%d", &opcao);
     system("cls");
-
     switch(opcao){
         case 1:
-        	printf("---MOTOS 2022---\n\t\t\tDiária");
-			printf("\n\n(1) Honda [CG 160]\tR$70,00\n(2) Yamaha [YBR 150]\tR$60,00\n(3) Haojue [DK150]\tR$45,00\n-> ");
-			scanf("%d", &opcao);
-			system("cls");
-				switch(opcao){
-					case 1:
-                        aluguel = 70;
+     	printf("---MOTOS 2022---\n\t\t\tDiária");
+	printf("\n\n(1) Honda [CG 160]\tR$70,00\n(2) Yamaha [YBR 150]\tR$60,00\n(3) Haojue [DK150]\tR$45,00\n-> ");
+	scanf("%d", &opcao);
+	system("cls");
+	switch(opcao){
+		case 1:
+                	aluguel = 70;
                         return Pagamento ();
-					break;
-					case 2:
+		break;
+		case 2:
                         aluguel = 60;
                         return Pagamento ();
-					break;
-					case 3:
+		break;
+		case 3:
                         aluguel = 45;
                         return Pagamento ();
-					break;
-					}
+		break;
+		}
         	break;
-        	case 2:
-				printf("---MOTOS 2021---\n\t\t\tDiária");
-				printf("\n\n(1) Honda [Biz 125]\tR$65,00\n(2) Yamaha [Fazer 250]\tR$60,00\n(3) Shineray [XY 50]\tR$40,00\n-> ");
-				scanf("%d", &opcao);
-				system("cls");
-					
-				switch(opcao){
-					case 1:
-                        aluguel = 65;
+        case 2:
+	printf("---MOTOS 2021---\n\t\t\tDiária");
+	printf("\n\n(1) Honda [Biz 125]\tR$65,00\n(2) Yamaha [Fazer 250]\tR$60,00\n(3) Shineray [XY 50]\tR$40,00\n-> ");
+	scanf("%d", &opcao);
+	system("cls");		
+	switch(opcao){
+		case 1:
+                       	aluguel = 65;
                         return Pagamento ();
-					break;
-					case 2:
+		break;
+		case 2:
                         aluguel = 60;
                         return Pagamento ();
-					break;
-					case 3:
+		break;
+		case 3:
                         aluguel = 40;
                         return Pagamento ();
-				break;
-			}				
+		break;
+		}				
         break;
 	}
 return 0;
